@@ -54,6 +54,7 @@ public:
                 arr[i].vehicle_name = "";
                 arr[i].vehicle_number = -1;
                 cout << "Vehicle with Number Plate " << vehicleNumber << " has exited from the parking." << endl;
+                cout << "Thankyou for shopping , have a nice day !" << endl;
                 return;
             }
         }
