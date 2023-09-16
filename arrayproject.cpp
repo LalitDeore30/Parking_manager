@@ -155,19 +155,37 @@ int main()
         {
         case 1:
         {
-            string type, name;
+            string type, name, option;
             int number, idx;
 
-            cout << "Enter Vehicle Type: ";
+            cout << "Enter Vehicle Type (car/bike): ";
             cin >> type;
-            cout << "Enter Vehicle Name: ";
-            cin >> name;
-            cout << "Enter Vehicle Number (Number Plate): ";
-            cin >> number;
-            cout << "Enter the parking idx where you want to park the vehicle: ";
-            cin >> idx;
 
-            parking.insertAtPosition(type, name, number, idx);
+            if (type == "car")
+            {
+                cout << "You have to pay Rs.50 for the parking." << endl;
+            }
+            else if (type == "bike")
+            {
+                cout << "You have to pay Rs.30 for the parking." << endl;
+            }
+            cout << "Enter 'pay' to continue otherwise you are not allowed to park your vehicle : ";
+            cin >> option;
+
+            if (option == "pay")
+            {
+                cout << "Enter Vehicle Name: ";
+                cin >> name;
+                cout << "Enter Vehicle Number (Number Plate): ";
+                cin >> number;
+                cout << "Enter the parking idx where you want to park the vehicle: ";
+                cin >> idx;
+                parking.insertAtPosition(type, name, number, idx);
+            }
+            else
+            {
+                cout << "Payment not received." << endl;
+            }
             break;
         }
         case 2:
