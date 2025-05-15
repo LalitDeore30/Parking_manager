@@ -1,3 +1,6 @@
+# Smart Parking Management System 🚗🏍️
+
+
 A **console-based Parking Management System** developed using **C++ and Object-Oriented Programming (OOP)** principles. The system enables effective parking lot management, vehicle tracking, parking slot availability, and basic fee handling.
 
 ---
